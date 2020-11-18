@@ -1,8 +1,11 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: 'none',
+  // mode: "production",
+  // mode: "development",
+  mode: "none",
   // 相对于package.json
   entry: "./src/index.js",
   output: {
@@ -16,12 +19,12 @@ module.exports = {
         test: /\.js$/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
         },
       },
     ],
   },
-  // plugins: [new HtmlWebpackPlugin()],
+  optimization: {
+  //   minimize: true,
+  //   minimizer: [new TerserPlugin()],
+  },
 };

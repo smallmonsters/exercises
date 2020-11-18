@@ -5,18 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --watch --config webpack.config.js "
   },
+  "sideEffects": false,
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.12.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1",
     "babel-loader": "^8.2.1",
     "html-webpack-plugin": "^5.0.0-alpha.14",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
   }
