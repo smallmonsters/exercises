@@ -1,4 +1,4 @@
-import { obj } from "./a.";
+import { obj } from "./a.js";
 let a = 1;
 const fn = async () => {
   [1, 2, 3].map((v) => v);

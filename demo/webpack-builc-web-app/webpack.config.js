@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
   // mode: "development",
   mode: "none",
   // 相对于package.json
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   output: {
     // 相对于webpack.config.js
     path: path.resolve(__dirname, "dist"),
@@ -17,8 +17,11 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: "babel-loader",
+          option:{
+          }
         },
       },
     ],
