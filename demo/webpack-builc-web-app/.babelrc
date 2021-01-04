@@ -1,25 +1,25 @@
 {
-  // // 预设：写一些支持新特新npm包的配置，
-  // "presets": [
-  //   [
-  //     // 支持新特新npm包
-  //     "@babel/preset-env",
-  //     // 支持新特新npm包的配置
-  //     {
-  //       "targets": {
-  //         "chrome": "58",
-  //         "ie": "11"
-  //       }
-  //     }
-  //   ]
-  // ],
-  // "plugins": [
-  //   [
-  //     "@babel/plugin-transform-runtime",
-  //     // 指定 runtime-corejs的版本，依赖是runtime-corejs3，这里就写3，使用runtime-corejs才能转化新的API
-  //     {
-  //       "corejs": 3 
-  //     }
-  //   ]
-  // ]
+  // 预设：写一些支持新特性npm包的配置，
+  "presets": [
+    [
+      // 支持新特性npm包
+      "@babel/preset-env",
+      // 支持新特性npm包的配置
+      {
+        "targets": {
+          "chrome": "38",
+          "ie": "9"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      // 指定 runtime-corejs的版本，依赖是runtime-corejs3，这里就写3，使用runtime-corejs才能转化新的API
+      {
+        "corejs": 3
+      }
+    ]
+  ],
 }

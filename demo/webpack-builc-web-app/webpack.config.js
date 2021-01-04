@@ -3,8 +3,10 @@
 const path = require("path");
 
 module.exports = {
-  // mode: "production",
-  // mode: "development",
+  /* 开发模式
+    // mode: "production",
+    // mode: "development",
+  */
   mode: "none",
   // 相对于package.json
   entry: "./src/js/index.js",
@@ -14,20 +16,19 @@ module.exports = {
     filename: "index.js",
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          option:{
-          }
-        },
+    rules: [{
+      test: /\.js$/,
+      exclude: /(node_modules)/,
+      use: {
+        loader: "babel-loader"
       },
-    ],
+    }],
   },
   optimization: {
-  //   minimize: true,
-  //   minimizer: [new TerserPlugin()],
+    /*
+      // 压缩js
+      //   minimize: true,
+      //   minimizer: [new TerserPlugin()],
+    */
   },
 };
