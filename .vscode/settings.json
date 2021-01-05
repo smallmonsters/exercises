@@ -1,0 +1,6 @@
+{
+  "pathAlias.aliasMap": {
+    // "@": "${cwd}/demo/webpack-builc-web-app/src",
+    "@": "${cwd}/demo/webpack-builc-web-app/src",
+  }
+}

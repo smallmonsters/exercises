@@ -15,14 +15,25 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
   },
+  resolve: {
+    // 自动解析确定的扩展,手动配置将覆盖默认配置
+    extensions: [".js", '.ts', 'tsx', ".json"],
+    alias: {
+      // 配置别名
+      "@": path.resolve(__dirname, 'src/')
+    }
+  },
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules)/,
-      use: {
-        loader: "babel-loader"
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: "babel-loader"
+        },
       },
-    }],
+      { test: /\.tsx?$/, loader: "ts-loader" }
+    ],
   },
   optimization: {
     /*

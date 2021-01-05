@@ -1,4 +1,4 @@
-import obj from "./a";
+import obj from "@/js/a.js";
 let a = 1;
 const fn = async () => {
   [1, 2, 3].map((v) => v);
@@ -10,7 +10,7 @@ const promise = new Promise((a, b) => {
 });
 fn()
   .then((res) => {
-    console.log(res, obj.name);
+    console.log(res, obj.name, " obj.name");
   })
   .catch((err) => {
     throw new Error(err);
