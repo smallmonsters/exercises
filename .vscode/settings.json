@@ -1,6 +1,9 @@
 {
+  "alias-skip.mappings": {
+    "@": "${cwd}/demo/webpack-builc-web-app/src"
+  },
   "pathAlias.aliasMap": {
     // "@": "${cwd}/demo/webpack-builc-web-app/src",
-    "@": "${cwd}/demo/webpack-builc-web-app/src",
+    "@": "${cwd}/demo/webpack-builc-web-app/src"
   }
 }
