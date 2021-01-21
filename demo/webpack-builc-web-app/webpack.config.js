@@ -9,7 +9,8 @@ module.exports = {
   */
   mode: "none",
   // 相对于package.json
-  entry: "./src/js/index.js",
+  // entry: "./src/js/index.js",
+  entry: "./src/ts/ats.ts",
   output: {
     // 相对于webpack.config.js
     path: path.resolve(__dirname, "dist"),
