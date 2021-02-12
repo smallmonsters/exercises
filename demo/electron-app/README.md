@@ -5,6 +5,7 @@
 * ##### [学习目的](#学习目的)
 * ##### [Hello World](#Hello World)
 * ##### [窗口相关](https://github.com/smallmonsters/exercises/blob/main/demo/electron-app/note/1.md)
+* ##### [对话框相关](https://github.com/smallmonsters/exercises/blob/main/demo/electron-app/note/2.md)
 * ##### [其他相关知识](#其他相关知识)
   + ###### [react性能分析](#react性能分析)
 
