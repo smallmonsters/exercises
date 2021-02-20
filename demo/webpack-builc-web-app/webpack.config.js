@@ -1,6 +1,7 @@
 // const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   /* 开发模式
@@ -33,7 +34,7 @@ module.exports = {
           loader: "babel-loader"
         },
       },
-      { test: /\.tsx?$/, loader: "ts-loader" }
+      { test: /\.tsx?$/, loader: "ts-loader" },
     ],
   },
   optimization: {
@@ -43,4 +44,7 @@ module.exports = {
       //   minimizer: [new TerserPlugin()],
     */
   },
+  plugins: [new ESLintPlugin({
+    extensions: ["jsx", "js", "tsx", "ts"]
+  })],
 };
