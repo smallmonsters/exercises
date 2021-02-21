@@ -1,7 +1,4 @@
 {
-  "alias-skip.mappings": {
-    "@": "${cwd}/src"
-  },
   "pathAlias.aliasMap": {
     "@": "${cwd}/src"
   }
