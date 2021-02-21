@@ -5,7 +5,7 @@ const fn = async () => {
   return a;
 };
 const promise = new Promise((a, b) => {
-  console.log(123);
+   console.log(123);
   a("promise");
 });
 fn()

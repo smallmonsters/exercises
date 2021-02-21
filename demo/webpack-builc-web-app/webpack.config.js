@@ -1,7 +1,7 @@
 // const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
-const ESLintPlugin = require('eslint-webpack-plugin');
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   /* 开发模式
@@ -19,10 +19,10 @@ module.exports = {
   },
   resolve: {
     // 自动解析确定的扩展,手动配置将覆盖默认配置
-    extensions: [".js", '.ts', 'tsx', ".json"],
+    extensions: [".js", ".ts", "tsx", ".json"],
     alias: {
       // 配置别名
-      "@": path.resolve(__dirname, 'src/')
+      "@": path.resolve(__dirname, "src/")
     }
   },
   module: {

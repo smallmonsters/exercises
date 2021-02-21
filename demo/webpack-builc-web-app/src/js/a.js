@@ -6,5 +6,10 @@
 // export function cube(x) {
 //   return x * x * x;
 // }
-const obj= {name:"a1"}
-export default obj
+const obj = { name: "f" };
+bar("one", "two", {
+  one: 1,
+  two: 2,
+});
+
+export default obj;
